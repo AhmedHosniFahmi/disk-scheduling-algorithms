@@ -1,4 +1,4 @@
-def get_min_distance(current, req_list: list):
+def get_min_distance_req(current, req_list: list):
     values = [i-current for i in req_list]
     abs_values = [abs(i) for i in values]
     min_value = min(abs_values)
@@ -16,8 +16,7 @@ done = []
 seek_time = []
 
 while request_list:
-    req = request_list[get_min_distance(current_position, request_list)]
-    print(req)
+    req = request_list[get_min_distance_req(current_position, request_list)]
     seek_time.append(abs(req - current_position))
     current_position = req
     done.append(req)
