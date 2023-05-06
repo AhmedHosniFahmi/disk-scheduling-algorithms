@@ -41,6 +41,27 @@ request                 seek time
 ################################################
 
 total seek time =  226
-
 ```
+```bash
+py C-SCAN.py
 
+requests : 98 183 41 122 14 124 65 67
+enter current position : 53
+(-) or (+) direction : +
+num of cylinders : 200
+################################################
+request                 seek time
+65                        12
+67                        2
+98                        31
+122                       24
+124                       2
+183                       59
+199                       16
+0                         199
+14                        14
+41                        27
+################################################
+
+total seek time =  386
+```
